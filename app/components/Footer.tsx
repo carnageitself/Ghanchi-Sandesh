@@ -13,7 +13,7 @@ import { BsFacebook } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className="relative   min-h-[200px] text-white text-[15px] p-[20px] py-[50px] justify-between  max-w-[1400px] m-auto flex flex-col md:flex-row items-center gap-[30px] md:items-start w-full ">
+    <div className="relative bg-[#EC5D82] min-h-[200px] text-white text-[15px] p-[20px] py-[50px] justify-between  max-w-[1400px] m-auto flex flex-col md:flex-row items-center gap-[30px] md:items-start w-full ">
       <div className=" flex flex-col items-center md:items-start gap-[5px]">
         <span className="logo">
           <Image src={Img} className="" width={150} height={100} alt="logo" />

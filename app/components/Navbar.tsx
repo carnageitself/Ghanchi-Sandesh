@@ -10,7 +10,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="navbar w-full max-w-[1400px]  text-[#D03E64]">
+    <div className="navbar w-full max-w-[1400px]  text-[#D03E64] shadow-xl">
       <div className="h-[30px] bg-[#B80433] w-full text-white flex items-center justify-center">
       <div className="flex items-center gap-1">
           <IoIosCall size={22}/>
