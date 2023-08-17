@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <>
-    <div className="div max-w-[1400px] m-auto">
+    <div className="div  m-auto">
     <Navbar/>
     {children}
     </div>
