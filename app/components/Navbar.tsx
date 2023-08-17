@@ -1,11 +1,14 @@
 "use client"
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import Img from "/public/logo.png";
 import { Divide as Hamburger } from 'hamburger-react'
 import { IoIosCall } from "react-icons/io";
 
 const Navbar = () => {
+
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="navbar w-full max-w-[1400px]  text-[#D03E64]">
       <div className="h-[30px] bg-[#B80433] w-full text-white flex items-center justify-center">
