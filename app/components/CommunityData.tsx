@@ -10,12 +10,12 @@ const CommunityData = () => {
       <div className=" img-div  w-full  h-[400px]  overflow-hidden ">
 <Image src={Img} alt='image' className='w-full' />
       </div>
-      <div className="bottom-2 w-full max-w-[750px] relative bottom-[35px] ">
+      <div className=" w-full max-w-[750px] relative bottom-[35px] ">
 
       <Search/>
       </div>
+<span className='text-start text-[32px] font-bold'>Home Director</span>
       </div>
-
     </div>
   )
 }
