@@ -1,17 +1,21 @@
 import React from 'react'
-import Img from '/public/'
+import Img from '/public/santhaye-2.jpeg'
 import Search from './Search'
+import Image from 'next/image'
 
 const CommunityData = () => {
   return (
-    <div>
-      <div className=" img-div relative w-[100vw] h-[400px] bg-gray-400 ">
-
+    <div className="flex    flex-col items-center">
+      <div className='w-[99.09vw] min-h-[70vh] bg-gray-100 flex    flex-col items-center'>
+      <div className=" img-div  w-full  h-[400px]  overflow-hidden ">
+<Image src={Img} alt='image' className='w-full' />
       </div>
-      <div className="bottom-2 relative bottom-[35px] ">
+      <div className="bottom-2 w-full max-w-[750px] relative bottom-[35px] ">
 
       <Search/>
       </div>
+      </div>
+
     </div>
   )
 }

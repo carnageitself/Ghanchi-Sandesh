@@ -1,4 +1,5 @@
-
+import Image from "next/image";
+import CommunityData from "./components/CommunityData";
 import Hero from "./components/Hero";
 import NewsFeed from "./components/NewsFeed";
 
