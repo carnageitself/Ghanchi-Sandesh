@@ -2,14 +2,10 @@ import Image from "next/image";
 import React from "react";
 import Img from "/public/logo.png";
 import { IoIosCall } from "react-icons/io";
-import { BiLogoLinkedin } from "react-icons/bi";
+import { BsLinkedin } from "react-icons/bs";
 import { AiOutlineTwitter } from "react-icons/ai";
-import { FaRedditAlien } from "react-icons/fa";
+import { GrInstagram } from "react-icons/gr";
 import { BsFacebook } from "react-icons/bs";
-// import {BsFacebook} from 'react-icons/io'
-// import {BsFacebook} from 'react-icons/io'
-// import {BsFacebook} from 'react-icons/io'
-// import {BsFacebook} from 'react-icons/io'
 
 const Footer = () => {
   return (
@@ -35,9 +31,9 @@ const Footer = () => {
           <span className="cursor-pointer hover:opacity-80">Coupons</span>
         </div>
         <div className="flex gap-[25px] justify-end items-center">
-          <BiLogoLinkedin size={25}   className="cursor-pointer hover:opacity-80"  />
-          <AiOutlineTwitter size={25} className="cursor-pointer hover:opacity-80"   />
-          <FaRedditAlien size={25}    className="cursor-pointer hover:opacity-80"  />
+          <BsLinkedin size={25}   className="cursor-pointer hover:opacity-80"  />
+          <AiOutlineTwitter size={28} className="cursor-pointer hover:opacity-80"   />
+          <GrInstagram size={25}    className="cursor-pointer hover:opacity-80"  />
           <BsFacebook size={25}       className="cursor-pointer hover:opacity-80"  />
         </div>
       </div>

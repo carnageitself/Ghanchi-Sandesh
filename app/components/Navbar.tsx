@@ -10,14 +10,14 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="navbar w-full max-w-[1400px]  text-[#D03E64] shadow-xl">
+    <div className="navbar w-full text-[#D03E64] shadow-xl">
       <div className="h-[30px] bg-[#B80433] w-full text-white flex items-center justify-center">
       <div className="flex items-center gap-1">
           <IoIosCall size={22}/>
           <span>+91 9956124789</span>
         </div>
       </div>
-      <div className="conatiner mx-auto flex items-center justify-between p-[20px] h-[72px] top-[30px]">
+      <div className="container mx-auto flex items-center justify-between p-[20px] h-[72px] top-[30px]">
         <div className="logo flex items-center">
         <Image src={Img} className="" width={150} height={100} alt="logo" />
         </div>
