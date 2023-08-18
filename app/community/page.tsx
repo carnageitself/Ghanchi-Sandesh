@@ -38,7 +38,9 @@ const Community = () => {
           />
           <br />
         </div>
-        <div className="uploads h-fit shadow-md">
+
+
+        <div className="md:mt-[38px] uploads h-fit shadow-md">
           <Upload />
         </div>
         <br />
