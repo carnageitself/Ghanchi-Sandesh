@@ -18,10 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <>
-    <div className="div max-w-[1400px] m-auto">
+    <div className="relative w-full">
     <Navbar/>
-    {children}
     </div>
+    {children}
    <div className="relative footer w-full m-auto">
     <Footer/>
 </div>

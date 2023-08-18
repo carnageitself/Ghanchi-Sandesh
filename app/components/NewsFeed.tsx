@@ -22,9 +22,9 @@ const NewsFeed = () => {
           <MdOutlineLocationOn size={25}/>
           <span className="text-[#EC5D82]">Location</span>
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 cursor-pointer">
           <BsShare size={25}/>
-          <span className="text-[#EC5D82] ">Share</span>
+          <span className="text-[#EC5D82]">Share</span>
         </div>
         </div>
       </div>
