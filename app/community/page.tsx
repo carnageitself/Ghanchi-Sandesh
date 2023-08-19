@@ -11,8 +11,8 @@ const Community = () => {
       <br />
       <div className="form flex flex-col gap-[30px] items-center md:items-start px-[25px] md:flex-row  justify-between">
         <div className="inputs flex flex-col gap-[15px] w-full md:w-[70%]">
-<span>Personal Details</span>
-          
+          <span>Personal Details</span>
+
           <Input placeholder="Full Name" primary />
           <Input placeholder="Father Name" primary />
           <Input placeholder="Mul Niwas" primary />
@@ -38,7 +38,6 @@ const Community = () => {
           />
           <br />
         </div>
-
 
         <div className="md:mt-[38px] uploads h-fit shadow-md">
           <Upload />

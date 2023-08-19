@@ -11,7 +11,7 @@ import {MdLocationPin} from 'react-icons/md'
 
 const Search = () => {
   return (
-    <div className='min-w-[250px] w-full md:w-full md:max-w-[800px] flex items-center bg-white m-auto shadow-md  active:outline-blue-600 shadow-gray-400  rounded-md overflow-hidden'>
+    <div className='min-w-[250x] w-full md:w-full md:max-w-[800px] flex items-center bg-white m-auto shadow-md  active:outline-blue-600 shadow-gray-400  rounded-md overflow-hidden'>
         <div className="h-full bg-red-600 text-white p-5">
 
         <FiSearch />
