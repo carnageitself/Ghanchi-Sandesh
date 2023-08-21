@@ -1,9 +1,11 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import Image from "next/image";
 import Img from "/public/engineer.jpeg";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { BsShare } from "react-icons/bs";
 import { data } from "../data/NewsData";
+import { PiDotsThreeOutlineVertical } from "react-icons/pi";
 
 interface NewsData {
   title: string;
@@ -14,6 +16,10 @@ interface NewsData {
 
 const NewsFeed: React.FC = () => {
   const { title, description, location, img } = data as NewsData;
+
+  const [open1, setOpen1] = useState(false);
+  const [open2, setOpen2] = useState(false);
+  const [open3, setOpen3] = useState(false);
 
   return (
     <div className="newsfeed bg-gray-100 w-full h-80 flex justify-between mb-20">
@@ -31,12 +37,29 @@ const NewsFeed: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="right flex-1">
-        <Image
-          src={Img}
-          alt="logo"
-          className="rounded-3xl w-[90%] h-full ml-5"
-        />
+      <div className="right flex-1 flex justify-between mr-5">
+        <Image src={Img} alt="logo" className="rounded-3xl w-[90%] h-full" />
+        <div className="cursor-pointer mr-2 mt-3">
+          <PiDotsThreeOutlineVertical size={25} />
+          {open1 && (
+          <div className="options absolute top-[765px] right-6 ml-10 my-5 bg-white border flex flex-col w-[200px] font-normal rounded-xl">
+            <span className="link hover:bg-gray-100 p-3 hover:rounded-tl-xl text-base font-medium">edit</span>
+            <span className="link hover:bg-gray-100 p-3 hover:rounded-bl-xl text-base font-medium">delete</span>
+          </div>
+        )}
+        {open2 && (
+          <div className="options absolute top-[1165px] right-6 ml-10 my-5 bg-white border flex flex-col w-[200px] font-normal rounded-xl">
+            <span className="link hover:bg-gray-100 p-3 hover:rounded-tl-xl text-base font-medium">edit</span>
+            <span className="link hover:bg-gray-100 p-3 hover:rounded-bl-xl text-base font-medium">delete</span>
+          </div>
+        )}
+        {open3 && (
+          <div className="options absolute top-[1565px] right-6 ml-10 my-5 bg-white border flex flex-col w-[200px] font-normal rounded-xl">
+            <span className="link hover:bg-gray-100 p-3 hover:rounded-tl-xl text-base font-medium">edit</span>
+            <span className="link hover:bg-gray-100 p-3 hover:rounded-bl-xl text-base font-medium">delete</span>
+          </div>
+        )}
+        </div>
       </div>
     </div>
   );
