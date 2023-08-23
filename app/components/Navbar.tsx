@@ -3,20 +3,13 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Img from "/public/logo.png";
 import { Divide as Hamburger } from 'hamburger-react'
-import { IoIosCall } from "react-icons/io";
 
 const Navbar = () => {
 
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="navbar w-full text-[#D03E64] shadow-xl">
-      <div className="h-[30px] bg-[#B80433] w-full text-white flex items-center justify-center">
-      <div className="flex items-center gap-1">
-          <IoIosCall size={22}/>
-          <span>+91 9956124789</span>
-        </div>
-      </div>
+    <div className="navbar w-full bg-[#C10A39] text-white shadow-xl">
       <div className="container mx-auto flex items-center justify-between p-[20px] h-[72px] top-[30px]">
         <div className="logo flex items-center">
         <Image src={Img} className="" width={150} height={100} alt="logo" />
