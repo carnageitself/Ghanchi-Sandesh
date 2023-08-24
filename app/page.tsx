@@ -2,7 +2,7 @@ import NewsFeed from "./components/NewsFeed";
 
 export default function Home() {
   return (
-    <div className="home bg-gray-100 pt-2 flex flex-col  ">
+    <div className="home bg-gray-100 pt-2 justify-center  flex flex-col  ">
       <div className="bg-gray-100 mt-16 ">
         <NewsFeed />
         <NewsFeed />
