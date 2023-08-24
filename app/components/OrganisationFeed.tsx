@@ -1,8 +1,19 @@
 import Image from "next/image";
 import React from "react";
 import Img from "/public/engineer.jpeg";
+import { data } from "../data/OrganizationData";
 
-const OrganisationFeed = () => {
+interface OrganizationProps {
+  title: string;
+  office: string;
+  chairman: string;
+  work: string;
+  img:string;
+}
+
+const OrganisationFeed:React.FC = () => {
+
+  const { title, office, chairman, work ,img} = data as OrganizationProps;
   return (
     <div className="">
       <div className="container w-full h-full mb-16">
@@ -21,26 +32,26 @@ const OrganisationFeed = () => {
               <div className="right flex-1 flex flex-col">
                 <div className="top">
                   <h1 className="text-3xl text-[#B80433] font-semibold mt-10">
-                    Shree Sawlaji Sanstha, Ghanchi Samaj, Bheenmal
+                   {data?.title}
                   </h1>
                 </div>
                 <div className="bottom flex flex-col mt-14">
                   <h1 className="text-2xl text-[#B80433] font-semibold">
                     Office:{" "}
                     <p className="text-xl font-medium text-[#636363]">
-                      Lorem ipsum hsgud oijdhsdhd ihdufgd bn
+                     {data?.office}
                     </p>
                   </h1>
                   <h1 className="text-2xl text-[#B80433] font-semibold">
                     Chairman:{" "}
                     <p className="text-xl font-medium text-[#636363]">
-                      Lorem ipsum hsgud oijdhsdhd ihdufgd bn
+                      {data?.chairman}
                     </p>
                   </h1>
                   <h1 className="text-2xl text-[#B80433] font-semibold">
                     Work:{" "}
                     <p className="text-xl font-medium text-[#636363]">
-                      Lorem ipsum hsgud oijdhsdhd ihdufgd bn
+                     {data?.work}
                     </p>
                   </h1>
                 </div>
