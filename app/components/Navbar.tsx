@@ -1,12 +1,14 @@
 "use client"
 import Image from "next/image";
-import { useState } from "react";
+import React, { useState } from "react";
 import Img from "/public/logo.png";
 import { Divide as Hamburger } from 'hamburger-react'
 
 const Navbar = () => {
 
   // const [open, setOpen] = useState(false);
+  
+
 
   const [navbar, setNavbar] = useState(false);
 
@@ -123,6 +125,9 @@ const Navbar = () => {
                         Sign up
                     </a>
                 </div> */}
+            <div className="mt-3 space-y-2 lg:hidden md:inline-block border-white rounded-md ">
+          <Hamburger  size={22} color="white" /> 
+          </div>
                     </div>
                 </div>
                 {/* <div className="hidden space-x-2 md:inline-block">
@@ -139,112 +144,12 @@ const Navbar = () => {
                         Sign up
                     </a>
                 </div> */}
+                 <div className="menu hidden space-x-2 md:inline-block"   >
+         <Hamburger size={22} color="white"  />
+         </div>
             </div>
         </nav>
-    </>
-    // <nav className="bg-black/30 p-4 content-center">
-    //   <div
-    //     className="container mx-auto flex justify-between items-center"
-    
-    
-    //   >
-    //     <div className="text-white font-bold text-xl">
-    //       <Image src={Img}  width={150} height={100} alt="logo" className="curser-pointer"/>
-    //     </div>
-    //     <div className="hidden md:flex space-x-4">
-    //       <a
-    //         href="#"
-    //         className="text-white hover:text-gray-800 hover:bg-slate-50 p-2 rounded-md  transition-all"
-    //       >
-    //         Home
-    //       </a>
-    //       <a
-    //         href="/admission"
-    //         className="text-white   hover:text-gray-800 hover:bg-slate-50 p-2 rounded-md transition-all"
-    //       >
-    //         Admission
-    //       </a>
-    //       <a
-    //         href="/topcolleges"
-    //         className="text-white  hover:text-gray-800 hover:bg-slate-50 p-2 rounded-md transition-all"
-    //       >
-    //         Top College
-    //       </a>
-
-    //       <a
-    //         href="/about"
-    //         className="text-white hover:text-gray-800 hover:bg-slate-50 p-2 rounded-md transition-all"
-    //       >
-    //         About us
-    //       </a>
-    //       <a
-    //         href="/contact"
-    //         className="text-white hover:text-gray-800 hover:bg-slate-50 p-2 rounded-md transition-all"
-    //       >
-    //         Contact us
-    //       </a>
-         
-    //     </div>
-
-    //     <div className="md:hidden">
-    //       {/* Mobile menu button */}
-    //       <button className="text-white" onClick={toggleMobileMenu} >
-    //         <svg
-    //           xmlns="http://www.w3.org/2000/svg"
-    //           className="h-6 w-6"
-    //           fill="none"
-    //           viewBox="0 0 24 24"
-    //           stroke="currentColor"
-    //         >
-    //           <path
-    //             strokeLinecap="round"
-    //             strokeLinejoin="round"
-    //             strokeWidth="2"
-    //             d="M4 6h16M4 12h16m-7 6h7"
-    //           ></path>
-    //         </svg>
-    //       </button>
-    //     </div>
-    //   </div>
-    //   {/* Mobile menu */}
-      
-    //     {isMobileMenuOpen && (
-    //       <div
-            
-    //         className="md:hidden mt-2 space-y-2 text-center"
-    //       >
-    //         <a href="#" className="block text-white hover:text-gray-300">
-    //           Home
-    //         </a>
-    //         <a
-    //           href="/admission"
-    //           className="block text-white hover:text-gray-300"
-    //         >
-    //           Admission
-    //         </a>
-    //         <a
-    //           href="/topcollege"
-    //           className="block text-white hover:text-gray-300"
-    //         >
-    //           Top College
-    //         </a>
-    //         <a
-    //           href="/about"
-    //           className="block text-white hover:text-gray-300"
-    //         >
-    //           About us
-    //         </a>
-    //         <a
-    //           href="/contact"
-    //           className="block text-white hover:text-gray-300"
-    //         >
-    //           Contact us
-    //         </a>
-       
-    //       </div>
-    //     )}
-     
-    // </nav>
+  </>
 
   )
 
