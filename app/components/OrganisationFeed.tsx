@@ -3,9 +3,9 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Img from "/public/engineer.jpeg";
 import { data } from "../data/OrganizationData";
-import { PiDotsThreeOutlineVertical } from "react-icons/pi";
-import { BsShare } from "react-icons/bs";
-import { MdOutlineLocationOn } from "react-icons/md";
+// import { PiDotsThreeOutlineVertical } from "react-icons/pi";
+// import { BsShare } from "react-icons/bs";
+// import { MdOutlineLocationOn } from "react-icons/md";
 
 interface OrganizationProps {
   title: string;
@@ -32,34 +32,37 @@ const OrganisationFeed: React.FC = () => {
                 width={500}
                 height={300}
                 alt="logo"
-                className="p-10  object-fill "
+                className="p-10 img object-fill "
               />
             </div>
-            <div className="right flex-1 ml-5  flex flex-col sm:">
+            <div className="right flex-1 ml-5  flex flex-col">
               <div className="top">
-                <h1 className="text-3xl text-[#B80433] pl-10 pr-10  text-center font-semibold mt-10">
+                <h1 className="text-3xl text-[#B80433] pl-10 pr-10  text-center font-semibold mt-10 ">
                   {data?.title}
                 </h1>
               </div>
-              <div className="bottom flex flex-col mt-14">
+              <div className="bottom flex flex-col  mt-14">
+                <div className="office flex-row">
                 <h1 className="text-2xl text-[#B80433] font-semibold">
                   Office:{" "}
-                  <p className="text-xl font-medium text-[#636363]">
+                  <span className="text-xl font-medium text-[#636363]">
                     {data?.office}
-                  </p>
+                  </span>
                 </h1>
+                
                 <h1 className="text-2xl text-[#B80433] font-semibold">
                   Chairman:{" "}
-                  <p className="text-xl font-medium text-[#636363]">
+                  <span className="text-xl font-medium text-[#636363]">
                     {data?.chairman}
-                  </p>
+                  </span>
                 </h1>
                 <h1 className="text-2xl text-[#B80433] font-semibold">
                   Work:{" "}
-                  <p className="text-xl font-medium text-[#636363]">
+                  <span className="text-xl font-medium text-[#636363]">
                     {data?.work}
-                  </p>
+                  </span>
                 </h1>
+                </div>
               </div>
             </div>
           </div>
@@ -90,14 +93,14 @@ const OrganisationFeed: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="flex">
+      {/* <div className="flex">
         <h1 className="text-5xl text-[#B80433] pl-10 pr-10  text-center font-semibold mt-10">
           Other Works
         </h1>
 
       
-      </div>
-      <div className="otherWork bg-gray-100 w-full h-80 flex justify-between  mb-20 mt-18">
+      </div> */}
+      {/* <div className="otherWork bg-gray-100 w-full h-80 flex justify-between  mb-20 mt-18">
           <div className="left flex flex-col sm:flex-shrink-0 mx-10 flex-1">
             <h1 className="text-[#B80433] lg:text-5xl md:text-5xl font-bold sm:text-3xl">
               Samajik Dharmsha
@@ -159,7 +162,7 @@ const OrganisationFeed: React.FC = () => {
               )}
             </div>
           </div>
-        </div>
+        </div> */}
     </div>
   );
 };
