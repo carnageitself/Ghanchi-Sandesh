@@ -3,9 +3,9 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Img from "/public/engineer.jpeg";
 import { data } from "../data/OrganizationData";
-import { PiDotsThreeOutlineVertical } from "react-icons/pi";
-import { BsShare } from "react-icons/bs";
-import { MdOutlineLocationOn } from "react-icons/md";
+// import { PiDotsThreeOutlineVertical } from "react-icons/pi";
+// import { BsShare } from "react-icons/bs";
+// import { MdOutlineLocationOn } from "react-icons/md";
 
 interface OrganizationProps {
   title: string;
