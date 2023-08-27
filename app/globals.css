@@ -2,14 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.footer{
-  background-color: #EC5D82;
+.footer {
+  background-color: #ec5d82;
 }
 
-.img{
+.img {
   border-radius: 4rem;
 }
 
-
-
+.img__radius {
+  border-radius: 2rem;
+}
