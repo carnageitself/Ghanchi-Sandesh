@@ -10,6 +10,10 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [navbar, setNavbar] = useState(false);
 
+  const handleClick = () => {
+    alert("open")
+  }
+
   // const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // const toggleMobileMenu = () => {
@@ -120,7 +124,7 @@ const Navbar = () => {
                         Sign up
                     </a>
                 </div> */}
-              <div className="mt-3 space-y-2 lg:hidden md:inline-block border-white rounded-md ">
+              <div className="mt-3 space-y-2 lg:hidden md:inline-block border-white rounded-md " onClick={handleClick}>
                 <Hamburger size={22} color="white" />
               </div>
             </div>
@@ -139,12 +143,11 @@ const Navbar = () => {
                         Sign up
                     </a>
                 </div> */}
-          <div className="menu hidden space-x-2 md:inline-block">
+          <div className="menu hidden space-x-2 md:inline-block" onClick={handleClick}>
             <Hamburger
               size={22}
               color="white"
-              toggle={setOpen}
-              toggled={open}
+            
             />
             {open && <div className="top-32 w-36 h-20 bg-white" onClick={()=> open}></div>}
           </div>
