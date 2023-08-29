@@ -53,7 +53,9 @@ console.log("sel",selectedImage)
           />
         </label>
         <span className="text-center text-white text-sm">Upload your photo</span>
+      
       </div>
+    
     </div>
   );
 };
