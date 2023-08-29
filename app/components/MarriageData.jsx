@@ -8,7 +8,7 @@ const MarriageData = () => {
     <>
     <div className="flex flex-col items-center overflow-hidden">
       <div className="w-full min-h-[70vh] bg-gray-100 flex flex-col items-center">
-        <div className=" img-div  w-full  h-[400px] md:h-[200px] sm:h-[100px]  overflow-hidden ">
+        <div className=" img-div h-70 md:h-25 sm:h-20 w-full  overflow-hidden ">
           <Image src={Img} alt="image" className="w-full" />
         </div>
         <div className=" w-full max-w-[750px]  relative bottom-[30px] ">

@@ -6,8 +6,8 @@ import Img from "@/public/engineer.jpeg";
 const MarriageSearch = () => {
   return (
     <>
-      <div className="flex md:flex-row sm:flex-col flex- gap-10">
-        <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow flex sm:flex-col md:flex-row ">
+      <div className="flex flex- gap-10">    
+        <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
           <a href="#">
             <Image
               src={Img}
@@ -25,8 +25,7 @@ const MarriageSearch = () => {
             </span>
           </div>
         </div>
-      
-        <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+         <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
           <a href="#">
             <Image
               src={Img}
