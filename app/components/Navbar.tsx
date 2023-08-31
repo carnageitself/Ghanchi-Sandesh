@@ -15,32 +15,9 @@ const Navbar = () => {
     alert("open")
   }
 
-  // const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // const toggleMobileMenu = () => {
-
-  //   setIsMobileMenuOpen(!isMobileMenuOpen);
-
-  // };
   return (
-    // <div className="navbar w-full bg-[#C10A39] text-white shadow-xl">
-    //   <div className="container mx-auto flex items-center justify-between p-[20px] h-[72px] top-[30px]">
-    //     <div className="logo flex items-center">
-    //     <Image src={Img}  width={150} height={100} alt="logo" />
-    //     </div>
-    //     <div className="nav gap-12 flex items-center justify-between text-xl font-medium">
-    //       <span className="cursor-pointer">टॉप न्यूज़</span>
-    //       <span className="cursor-pointer">सामाजिक</span>
-    //       <span className="cursor-pointer">धार्मिक</span>
-    //       <span className="cursor-pointer">शेक्शनिक</span>
-    //       <span className="cursor-pointer">अन्य</span>
-    //     </div>
-    //     <div className="menu">
-    //       <Hamburger size={22}/>
-    //       </div>
-    //   </div>
-    // </div>
-
+   
     <>
       <nav className="w-full bg-[#C10A39] shadow">
         <div className="justify-between px-4 mx-auto lg:max-w-8xl md:items-center md:flex md:px-8">
@@ -134,9 +111,11 @@ const Navbar = () => {
                         Sign up
                     </a>
                 </div> */}
-              <div className="mt-3 space-y-2 lg:hidden md:inline-block border-white rounded-md " onClick={handleClick}>
+
+                
+              {/* <div className="mt-3 space-y-2 lg:hidden md:inline-block border-white rounded-md " onClick={handleClick}>
                 <Hamburger size={22} color="white" />
-              </div>
+              </div> */}
             </div>
           </div>
           {/* <div className="hidden space-x-2 md:inline-block">
@@ -153,7 +132,7 @@ const Navbar = () => {
                         Sign up
                     </a>
                 </div> */}
-          <div className="menu hidden space-x-2 md:inline-block" onClick={handleClick}>
+          <div className="menu hidden space-x-2 md:inline-block">
             <Hamburger
               size={22}
               color="white"

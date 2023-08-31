@@ -17,14 +17,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
-      <div className="relative w-full">
-        <Navbar />
-      </div>
-      {children}
-      <div className="relative footer w-full m-auto">
-        <Footer />
-      </div>
-    </>
+    <html lang="en">
+      <body className={inter.className}>
+        <div className="relative w-full">
+          <Navbar />
+        </div>
+        {children}
+        <div className="relative footer w-full m-auto">
+          <Footer />
+        </div>
+      </body>
+    </html>
   );
 }
