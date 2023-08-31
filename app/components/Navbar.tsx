@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Img from "/public/logo.png";
 import { Divide as Hamburger } from "hamburger-react";
+import Link from "next/link";
 
 const Navbar = () => {
   // const [open, setOpen] = useState(false);
@@ -94,19 +95,28 @@ const Navbar = () => {
             >
               <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                 <li className="text-white hover:text-indigo-200">
-                  <a href="#">टॉप न्यूज़</a>
+                  <Link href="/">Home</Link>
                 </li>
                 <li className="text-white hover:text-indigo-200">
-                  <a href="/">सामाजिक</a>
+                <Link href="/community">Community</Link>
                 </li>
                 <li className="text-white hover:text-indigo-200">
-                  <a href="/">धार्मिक</a>
+                <Link href="/marriage">Marriage</Link>
                 </li>
                 <li className="text-white hover:text-indigo-200">
-                  <a href="/">शेक्शनिक</a>
+                <Link href="/organization">Organization</Link>
                 </li>
                 <li className="text-white hover:text-indigo-200">
-                  <a href="/">अन्य</a>
+                <Link href="/services">Services</Link>
+                </li>
+                <li className="text-white hover:text-indigo-200">
+                <Link href="/achievements">Achievements</Link>
+                </li>
+                <li className="text-white hover:text-indigo-200">
+                <Link href="/magazine">Magazine</Link>
+                </li>
+                <li className="text-white hover:text-indigo-200">
+                <Link href="/about">About</Link>
                 </li>
               </ul>
 
