@@ -2,12 +2,12 @@ import React from "react";
 import Image from "next/image";
 import { FiSearch } from "react-icons/fi";
 import Img from "@/public/engineer.jpeg";
-
+import "../marriage/style.css"
 const MarriageSearch = () => {
   return (
     <>
-      <div className="flex flex- gap-10">    
-        <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+      <div className="flex flex- gap-10 marriage__search__sm">    
+        <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
           <a href="#">
             <Image
               src={Img}

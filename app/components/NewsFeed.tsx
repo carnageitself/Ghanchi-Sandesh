@@ -23,8 +23,8 @@ const NewsFeed: React.FC = () => {
 
   return (
     <>
-      <div className="newsfeed bg-gray-100 w-full h-80 flex justify-between  mb-20 ">
-        <div className="left flex flex-col sm:flex-shrink-0 mx-10 flex-1">
+      {/* <div className="newsfeed bg-gray-100 w-full h-80 flex justify-between  mb-20 "> */}
+      {/* <div className="left flex flex-col sm:flex-shrink-0 mx-10 flex-1">
           <h1 className="text-[#B80433] lg:text-5xl md:text-5xl font-bold sm:text-3xl">
             {title}
           </h1>
@@ -81,8 +81,45 @@ const NewsFeed: React.FC = () => {
               </div>
             )}
           </div>
+        </div> */}
+
+      <div className="pt-6 pb-12">
+        <div className="">
+
+
+          <div className="container w-100 lg:w-4/5 mx-auto flex flex-col">
+
+            <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden
+                                        bg-white rounded-lg shadow-xl  mt-4 w-100 mx-2">
+
+
+
+              <div className="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
+                <h1 className="font-semibold text-lg leading-tight truncate lg:text-5xl md:text-5xl">{title}</h1>
+                <p className="mt-2 text-lg">
+                  {description}
+                </p>
+                <div className="text-sm text-gray-700 uppercase flex items-center justify-between tracking-wide font-semibold mt-2">
+                  <span className="flex text-[#EC5D82] text-md"> < MdOutlineLocationOn size={20} /> {location} </span>
+                  <span className="flex text-[#EC5D82]" ><BsShare size={20} /> <span className="text-md ml-1">Share </span></span>
+                </div>
+              </div>
+              <div className="h-auto w-auto md:w-1/2">
+                <Image className="inset-0 h-full w-full object-cover object-center" src={Img} alt="News_feed_img" />
+
+              </div>
+              <div>
+                < PiDotsThreeOutlineVertical size="20" />
+              </div>
+            </div>
+
+            {/* <!--/ card--> */}
+          </div>
+          {/* <!--/ flex--> */}
         </div>
       </div>
+
+      {/* </div> */}
     </>
   );
 };
