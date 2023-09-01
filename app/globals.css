@@ -10,7 +10,22 @@
   border-radius: 4rem;
 }
 
+
 .img__radius {
   border-radius: 2rem;
+  width: 100%;
+}
+
+@media screen and (max-width:769px) {
+  .cards__achievements {
+ padding: 0;
+ 
+  }
+}
+
+@media screen and (max-width:680px) {
+  .cards__achievements {
+ padding: 0;
+  }
 }
 
