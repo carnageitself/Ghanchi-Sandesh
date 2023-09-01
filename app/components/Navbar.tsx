@@ -136,7 +136,8 @@ const Navbar = () => {
             <Hamburger
               size={22}
               color="white"
-            
+            toggle={setOpen}
+            toggled={open}
             />
             {open && <div className="top-32 w-36 h-20 bg-white" onClick={()=> open}></div>}
           </div>
