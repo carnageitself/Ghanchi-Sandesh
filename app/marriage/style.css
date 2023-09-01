@@ -1,0 +1,23 @@
+/* @media only-screen and (max-width:600px) {
+    .marriage__search__sm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+} */
+@media screen and (max-width:600px) {
+    .marriage__search__sm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .marriage__search__sm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
