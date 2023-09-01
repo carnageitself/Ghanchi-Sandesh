@@ -8,7 +8,7 @@ const ServiceCard = () => {
   return (
     <>
         {/* <!-- Column --> */}
-        <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+        <div className="my-1 px-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
           {/* <!-- Article --> */}
           <article className="overflow-hidden rounded-lg shadow-lg">
             <div className="img__main__container  -pt-5">
