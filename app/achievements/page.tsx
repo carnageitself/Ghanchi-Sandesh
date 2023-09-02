@@ -60,6 +60,10 @@ const Achievements: React.FC = () => {
         </div>
 
       </div>
+<div className='flex justify-center items-center mb-5'>
+<button className='bg-[#B80433] p-4 text-center text-white rounded-md'>Upload</button>
+
+</div>
 
     </>
   )
