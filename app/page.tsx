@@ -55,7 +55,7 @@ export default function Home() {
         <NewsFeed />
       </div>
       <div className="flex items-center  justify-center">
-        <button className="bg-green-600 text-white px-5 py-2 rounded-lg mb-20 cursor-pointer font-semibold text-xl shadow-xl hover:scale-105">
+        <button className="bg-[#B80433] text-white px-5 py-2 rounded-lg mb-20 cursor-pointer font-semibold text-xl shadow-xl hover:scale-105">
           Upload
         </button>
       </div>

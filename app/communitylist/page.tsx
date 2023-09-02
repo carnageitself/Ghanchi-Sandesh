@@ -4,18 +4,18 @@ import Image from "next/image";
 import Img from "/public/engineer.jpeg";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { BsShare } from "react-icons/bs";
-import { data } from "../data/NewsData";
+import { data } from "../data/ComunityListData";
 import { PiDotsThreeOutlineVertical } from "react-icons/pi";
 
-interface NewsData {
+interface Communitydata {
   title: string;
   description: string;
   location: string;
   img: string;
 }
 
-const NewsFeed: React.FC = () => {
-  const { title, description, location, img } = data as NewsData;
+const CommunityList: React.FC = () => {
+  const { title, description, location, img } = data as Communitydata;
 
   const [open1, setOpen1] = useState(false);
   const [open2, setOpen2] = useState(false);
@@ -99,4 +99,4 @@ const NewsFeed: React.FC = () => {
   );
 };
 
-export default NewsFeed;
+export default CommunityList;

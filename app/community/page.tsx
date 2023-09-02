@@ -36,6 +36,11 @@ const Community = () => {
             cols={10}
             rows={5}
           />
+          <div className="flex justify-center items-center">
+            {" "}
+            <button className="bg-[#B80433] text-white p-4 ">Upload</button>
+          </div>
+
           <br />
         </div>
 

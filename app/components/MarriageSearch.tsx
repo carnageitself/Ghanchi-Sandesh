@@ -18,8 +18,8 @@ const MarriageSearch = () => {
             />
           </a>
           <div className="p-5 relative">
-            <input type="search " placeholder="search for groom" className="p-1 w-[100%]"/>
-            <span className="flex absolute top-7 right-7">
+            <input type="search " placeholder="Search for groom" className="p-1 w-[100%] outline-gray-200 rounded"/>
+            <span className="flex absolute top-7 right-7 cursor-pointer">
             <FiSearch/>
               
             </span>
@@ -36,8 +36,8 @@ const MarriageSearch = () => {
             />
           </a>
           <div className="p-5 relative">
-            <input type="search " placeholder="search for bride" className="p-1 w-[100%]"/>
-            <span className="flex absolute top-7 right-7">
+            <input type="search " placeholder="Search for bride" className="p-1 w-[100%] outline-gray-200 rounded"/>
+            <span className="flex absolute top-7 right-7 cursor-pointer" >
             <FiSearch/>
               
             </span>

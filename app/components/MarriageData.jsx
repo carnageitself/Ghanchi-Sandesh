@@ -18,7 +18,7 @@ const MarriageData = () => {
        
       </div>
     </div>
-    <div className="pl-8 text-[32px] font-bold">Upload details</div>
+    <div className="pl-8 text-[32px] font-bold mt-5">Upload details</div>
     </>
   );
 };

@@ -3,7 +3,9 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Img from "/public/logo.png";
 import { Divide as Hamburger } from "hamburger-react";
+import {FcMenu} from "react-icons/fc"
 import Link from "next/link";
+import Dropdown from "./Dropdown";
 
 const Navbar = () => {
   // const [open, setOpen] = useState(false);
@@ -17,7 +19,7 @@ const Navbar = () => {
 
 
   return (
-   
+
     <>
       <nav className="w-full md:w-full sm:w-full bg-[#C10A39] shadow">
         <div className="justify-between px-4 mx-auto md:w-full lg:max-w-8xl md:items-center md:flex md:px-8">
@@ -28,7 +30,7 @@ const Navbar = () => {
               </a>
               <div className="md:hidden">
                 <button
-                  className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                  className="p-2 text-white rounded-md outline-none :border-gray-400 focus:border"
                   onClick={() => setNavbar(!navbar)}
                 >
                   {navbar ? (
@@ -60,40 +62,40 @@ const Navbar = () => {
                       />
                     </svg>
                   )}
+
                 </button>
               </div>
             </div>
           </div>
           <div>
             <div
-              className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-                navbar ? "block" : "hidden"
-              }`}
+              className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
+                }`}
             >
               <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                 <li className="text-white hover:text-indigo-200">
                   <Link href="/">Home</Link>
                 </li>
                 <li className="text-white hover:text-indigo-200">
-                <Link href="/community">Community</Link>
+                  <Link href="/community">Community</Link>
                 </li>
                 <li className="text-white hover:text-indigo-200">
-                <Link href="/marriage">Marriage</Link>
+                  <Link href="/marriage">Marriage</Link>
                 </li>
                 <li className="text-white hover:text-indigo-200">
-                <Link href="/organization">Organization</Link>
+                  <Link href="/organization">Organization</Link>
                 </li>
                 <li className="text-white hover:text-indigo-200">
-                <Link href="/services">Services</Link>
+                  <Link href="/services">Services</Link>
                 </li>
                 <li className="text-white hover:text-indigo-200">
-                <Link href="/achievements">Achievements</Link>
+                  <Link href="/achievements">Achievements</Link>
                 </li>
                 <li className="text-white hover:text-indigo-200">
-                <Link href="/magazine">Magazine</Link>
+                  <Link href="/magazine">Magazine</Link>
                 </li>
                 <li className="text-white hover:text-indigo-200">
-                <Link href="/about">About</Link>
+                  <Link href="/about">About</Link>
                 </li>
               </ul>
 
@@ -112,7 +114,7 @@ const Navbar = () => {
                     </a>
                 </div> */}
 
-                
+
               {/* <div className="mt-3 space-y-2 lg:hidden md:inline-block border-white rounded-md " onClick={handleClick}>
                 <Hamburger size={22} color="white" />
               </div> */}
@@ -132,15 +134,15 @@ const Navbar = () => {
                         Sign up
                     </a>
                 </div> */}
-          <div className="menu hidden space-x-2 md:inline-block">
+          <span className="menu hidden space-x-2 md:inline-block">
             <Hamburger
               size={22}
               color="white"
-            toggle={setOpen}
-            toggled={open}
+              toggle={setOpen}
+              toggled={open}
             />
-            {open && <div className="top-32 w-36 h-20 bg-white" onClick={()=> open}></div>}
-          </div>
+             {open && <div className="top-20" onClick={()=>open}><Dropdown/></div>}
+          </span>
         </div>
       </nav>
     </>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Img from "/public/engineer.jpeg";
+import Img from "@/public/engineer.jpeg";
 import { data } from "../data/OrganizationData";
 
 import { MdOutlineLocationOn } from "react-icons/md";

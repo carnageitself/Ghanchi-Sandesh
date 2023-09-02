@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Img from "/public/logo.png";
 import { IoIosCall } from "react-icons/io";
-import { BsLinkedin } from "react-icons/bs";
+import { BsYoutube } from "react-icons/bs";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { GrInstagram } from "react-icons/gr";
 import { BsFacebook } from "react-icons/bs";
@@ -18,9 +18,9 @@ const Footer = () => {
           Address: orem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
           eu turpis molestie
         </p>
-        <div className="flex gap-[15px] items-center text-[15px]">
-          <IoIosCall />
-          <span>+91 9956124789</span>
+        <div className="flex gap-[10px] items-center text-[15px]">
+          <IoIosCall size={21}/>
+          <span>+91 9636941272</span>
         </div>
       </div>
       <div className="flex items-center md:items-end flex-col gap-[25px]">
@@ -31,8 +31,8 @@ const Footer = () => {
           <span className="cursor-pointer hover:opacity-80">Coupons</span>
         </div>
         <div className="flex gap-[25px] justify-end items-center">
-          <BsLinkedin size={25}   className="cursor-pointer hover:opacity-80"  />
-          <AiOutlineTwitter size={28} className="cursor-pointer hover:opacity-80"   />
+          <BsYoutube size={28}   className="cursor-pointer hover:opacity-80" />
+          <AiOutlineTwitter size={29} className="cursor-pointer hover:opacity-80"   />
           <GrInstagram size={25}    className="cursor-pointer hover:opacity-80"  />
           <BsFacebook size={25}       className="cursor-pointer hover:opacity-80"  />
         </div>

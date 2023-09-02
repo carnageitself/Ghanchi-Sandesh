@@ -16,12 +16,12 @@ const Search = () => {
       </div>
       <input
         type="text"
-        placeholder="Search Name And Location "
+        placeholder="Search Name And Location"
         className="px-[15px] outline-none w-full"
       />
-      <div className="location text-red-500 text-[15px] flex items-center gap-[10px] pr-[25px]">
+      <div className="location text-red-500 text-[20px] flex items-center gap-[10px] pr-[25px]">
         <MdLocationPin size={25} />
-        <span>Mumbai</span>
+        <span>India</span>
       </div>
     </div>
   );
