@@ -1,6 +1,10 @@
-import NewsFeed from "./components/NewsFeed";
+'use client'
 
+import NewsFeed from "./components/NewsFeed";
+import {useAuth} from   './hooks/useAuth'
 export default function Home() {
+  const {authenticated, loading, }=useAuth();
+  console.log('isAuthenticated',authenticated)
   return (
     <div className="home bg-gray-100 pt-2 justify-center  flex flex-col  ">
       <ul className="flex flex-wrap text-sm font-medium text-center text-gray-500 dark:text-gray-400 mt-5 ml-10">
