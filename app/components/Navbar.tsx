@@ -141,9 +141,7 @@ const Navbar = () => {
               toggle={setOpen}
               toggled={open}
             />
-            {open && <span className=" bg-white" onClick={() => open}>
-              <Dropdown/>
-            </span>}
+             {open && <div className="top-20" onClick={()=>open}><Dropdown/></div>}
           </span>
         </div>
       </nav>
