@@ -6,7 +6,7 @@ const Services = () => {
     <>
 
 
-      <div className="container my-12 mx-auto px-4 md:px-12">
+      <div className="container my-12 mx-auto px-4">
         <ul className="flex flex-wrap text-sm font-medium text-center text-gray-500 dark:text-gray-400">
           <li className="mr-2">
             <a href="#" className="inline-block px-4 py-3 text-white bg-[hsl(344,96%,37%)] rounded-full active" aria-current="page">Samaj  bhavan</a>
@@ -22,14 +22,15 @@ const Services = () => {
           </li>
 
         </ul>
-        <div className="flex flex-wrap -mx-1 lg:-mx-4">
+      </div>
+      <div className="flex flex-wrap p-2 w-full lg:-mx-4 services__overflow">
 
-          <ServicesFeed />
-          <ServicesFeed />
-          <ServicesFeed />
-        </div>
+        <ServicesFeed />
+        <ServicesFeed />
+        <ServicesFeed />
       </div>
     </>
+
   );
 };
 

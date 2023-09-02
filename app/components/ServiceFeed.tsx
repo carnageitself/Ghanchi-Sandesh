@@ -3,14 +3,8 @@ import ServiceCard from './ServiceCard'
 
 const ServiceFeed = () => {
   return (
-  
-     <>
-    
-
-
-      <ServiceCard/>
-      </>
-  )
+ <ServiceCard />
+ )
 }
 
 export default ServiceFeed

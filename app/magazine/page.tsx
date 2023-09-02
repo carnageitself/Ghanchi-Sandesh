@@ -18,14 +18,14 @@ const Magazine = () => {
       <MagazineData />
       </div>
       </div>
-      <div className="contact w-full">
+      <div className="contact flex flex-col items-center w-full">
       <div className="container flex flex-col h-72 bg-white items-center justify-center gap-3">
-       <h1 className="text-5xl font-semibold text-[#C10A39]">To advertise in ghanchi sandesh contact</h1>
-       <h1 className="text-5xl font-semibold text-black">Dinesh Kumar</h1>
+       <h1 className="text-3xl font-semibold text-[#C10A39]">To advertise in ghanchi sandesh contact</h1>
+       <h1 className="text-3xl font-semibold text-black">Dinesh Kumar</h1>
        <div className="flex items-center gap-2">
        <IoIosCall size={40}/>
          
-       <h1 className="text-5xl font-medium text-black">+123456789</h1>
+       <h1 className="text-3xl font-medium text-black">+123456789</h1>
        </div>
       </div>
       </div>
