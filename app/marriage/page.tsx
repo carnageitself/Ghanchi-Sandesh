@@ -1,12 +1,12 @@
 import React from "react";
-import CommunityData from "../components/CommunityData";
+import MarriageData from "../components/MarriageData";
 import Input from "../components/inputs/Input";
 import Upload from "../components/inputs/Upload";
-
-const Community = () => {
+const Marriage = () => {
   return (
-    <div className="relative text-red-600 w-full ">
-      <CommunityData />
+  
+      <div className=" text-red-600 w-full mb-5 ">
+      <MarriageData />
 
       <br />
       <div className="form flex flex-col gap-[30px] items-center md:items-start px-[25px] md:flex-row  justify-between">
@@ -37,15 +37,25 @@ const Community = () => {
             rows={5}
           />
           <br />
+        <button className="bg-[#B80433] text-white p-3 w-[100px] rounded-full">upload</button>
+
         </div>
 
         <div className="md:mt-[38px] uploads h-fit shadow-md">
           <Upload />
+       
         </div>
+      
         <br />
+        <div >
+       {/* <button className="bg-[#B80433] text-white   p-1">Upload</button> */}
+       </div>
       </div>
     </div>
+
+
+
   );
 };
 
-export default Community;
+export default Marriage;
