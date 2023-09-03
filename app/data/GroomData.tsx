@@ -1,5 +1,5 @@
 export const data = {
-    Name: " Shree Sawlaji Sanstha, Ghanchi Samaj, Bheenmal",
+    Name: " Shree Sawlaji S",
     Fathers_name: " Lorem ipsum hsgud oijdhsdhd ihdufgd bn",
     Mull_Nivas: " Lorem ipsum hsgud oijdhsdhd ihdufgd bn",
     Education: " Lorem ipsum hsgud oijdhsdhd ihdufgd bn",

@@ -23,7 +23,7 @@ const Services = () => {
 
         </ul>
       </div>
-      <div className="flex flex-wrap p-2 w-full lg:-mx-4 services__overflow">
+      <div className="flex flex-wrap p-2 w-full lg:-mx-4 services__overflow justify-center">
 
         <ServicesFeed />
         <ServicesFeed />

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Img from "@/public/engineer.jpeg";
-import { data } from "../data/OrganizationData";
+import { data } from "../data/Servicedata";
 
 import { MdOutlineLocationOn } from "react-icons/md";
 const ServiceCard = () => {
@@ -36,25 +36,20 @@ const ServiceCard = () => {
                 </a>
               </h1>
               <div className="wrapper flex align-baseline flex-row ">
-                <h3 className="text-[#b80433] font-bold text-md">Admin:</h3>
-                <span className="text-dark-gray ">{data?.office}</span>
+                <h3 className="text-[#b80433] font-bold text-md">Address:</h3>
+                <span className="text-dark-gray ">{data?.address}</span>
               </div>
               <div className="wrapper flex flex-row ">
-                <h3 className="text-[#B80433]  text-md font-bold">Address:</h3>
-                <span className="text-dark-gray ">{data?.chairman}</span>
-              </div>
-              <div className="wrapper flex flex-row ">
-                <h3 className="text-[#B80433] text-md font-bold">
-                  Phone number:
-                </h3>
-                <span className="text-dark-gray "> {data?.work}</span>
+                <h3 className="text-[#B80433]  text-md font-bold">Phone:</h3>
+                <span className="text-dark-gray ">{data?.phone_number}</span>
               </div>
               <div className="wrapper flex flex-row ">
                 <h3 className="text-[#B80433] text-md font-bold">
-                  Helpline number:
+                  Helpline Number:
                 </h3>
-                <span className="text-dark-gray "> {data?.work}</span>
+                <span className="text-dark-gray "> {data?.helpline_number}</span>
               </div>
+         
             </header>
           </article>
           {/* <!-- END Article --> */}
