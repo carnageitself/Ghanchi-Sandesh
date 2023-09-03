@@ -1,10 +1,13 @@
 'use client'
 
+import { useState } from "react";
+import HomeForm from "./components/HomeForm";
 import NewsFeed from "./components/NewsFeed";
 import {useAuth} from   './hooks/useAuth'
 export default function Home() {
   const {authenticated, loading, }=useAuth();
   console.log('isAuthenticated',authenticated)
+  const [open, setOpen]  = useState(false);
   return (
     <div className="home bg-gray-100 pt-2 justify-center  flex flex-col  ">
       <ul className="flex flex-wrap text-sm font-medium text-center text-gray-500 dark:text-gray-400 mt-5 ml-10">
@@ -59,10 +62,13 @@ export default function Home() {
         <NewsFeed />
       </div>
       <div className="flex items-center  justify-center">
-        <button className="bg-[#B80433] text-white px-5 py-2 rounded-lg mb-20 cursor-pointer font-semibold text-xl shadow-xl hover:scale-105">
+      <div className="flex justify-center items-center mb-5">
+       {!open && <button className="bg-[#B80433] p-4 text-center text-white rounded-md" onClick={()=>setOpen(!open)}>
           Upload
-        </button>
+        </button>}
       </div>
+      </div>
+      {open && <HomeForm/>}
     </div>
   );
 }
