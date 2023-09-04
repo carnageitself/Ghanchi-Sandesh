@@ -21,20 +21,21 @@ const OrganisationFeed: React.FC = () => {
   return (
     <>
       <div className="container mx-auto p-4 bg-white shadow-md mb-10">
-        <div className="bg-white rounded-lg  lg:flex">
+      <div className="bg-white rounded-lg  lg:flex items-center">
           {/* <!-- Left Image --> */}
           <div className="lg:w-1/2">
             <Image
               src={Img}
-              width={420}
-              height={320}
+              // width={420}
+              // height={320}
               alt="Achivment_page"
-              className=" rounded-t-lg lg:rounded-l-lg lg:rounded-t-none"
+              className=" sm:w-11/12 md:w-2/4 lg:w-10/12 rounded-lg lg:rounded-l-lg lg:rounded-t-none"
+
             />
           </div>
 
           {/* <!-- Right Content --> */}
-          <div className="lg:w-1/2 p-4">
+          <div className="lg:w-1/2 p-4 ">
             <div className="mb-2  font-bold tracking-tight text-xl">
               <span className="text-[hsl(344,96%,37%)] ">Title:</span> {title}{" "}
             </div>

@@ -27,6 +27,7 @@ const ServiceCard = () => {
               </a>
             </div>
             <header className="flex gap-1.5 flex-col leading-tight p-2 md:p-4 mb-4">
+
               <h1 className="text-2xl">
                 <a
                   className="no-underline hover:underline font-extrabold text-[#B80433]"
