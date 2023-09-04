@@ -41,6 +41,7 @@ export function useLogin(): LoginState {
 
           // Set the user's ID in local storage
           localStorage.setItem("userId", data.user._id);
+          localStorage.setItem("token", data.token);
 
           // Set the token in cookies
           Cookies.set("token", data.token, { expires: 5 }); // Cookie expires in 1 day
