@@ -32,14 +32,17 @@ export function useUserDetails(): UserDetailsState {
 
     const fetchUserDetails = async () => {
       try {
-        const response = await fetch(`${API_URL}/user/${userId}`, {
-          method: 'GET',
-          // Add headers like authentication tokens if required
-        });
+        const response = await fetch(`http://localhost:3001/api/v1/user`, {
+          method: 'POST', // Change the HTTP method to POST
+          headers: {
+            'Content-Type': 'application/json', // Set the content type to JSON
+          },
+          body: JSON.stringify({ id: userId }), // Send the id in the request body as JSON
+        }); 
 
         if (response.ok) {
           const userData = await response.json();
-          setUserDetails(userData);
+          setUserDetails(userData?.user );
         } else {
           setError(new Error('Failed to fetch user details'));
         }
