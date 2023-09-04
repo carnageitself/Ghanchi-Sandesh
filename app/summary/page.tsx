@@ -4,7 +4,7 @@ import Image from "next/image";
 import { BsShare } from "react-icons/bs";
 import { MdOutlineLocationOn } from "react-icons/md";
 
-const Summarypage = () => {
+const summary= () => {
   return (
     <>
       <div className="bg-white m-5">
@@ -54,4 +54,4 @@ const Summarypage = () => {
   );
 };
 
-export default Summarypage;
+export default summary;
