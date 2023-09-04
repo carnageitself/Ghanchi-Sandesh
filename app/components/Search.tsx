@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 import { FiSearch } from "react-icons/fi";
@@ -11,9 +12,11 @@ import { MdLocationPin } from "react-icons/md";
 const Search = () => {
   return (
     <div className="min-w-[250x] w-full md:w-full md:max-w-[800px] flex items-center bg-white m-auto shadow-md  active:outline-blue-600 shadow-gray-400  rounded-md overflow-hidden">
-      <div className="h-full bg-red-600 text-white p-5">
+     <Link href="/communitylist">
+       <div className="h-full bg-red-600 text-white p-5 cursor-pointer">
         <FiSearch />
       </div>
+      </Link>
       <input
         type="text"
         placeholder="Search Name And Location"

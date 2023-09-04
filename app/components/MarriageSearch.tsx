@@ -3,6 +3,7 @@ import Image from "next/image";
 import { FiSearch } from "react-icons/fi";
 import Img from "@/public/engineer.jpeg";
 import "../marriage/style.css"
+import Link from "next/link";
 const MarriageSearch = () => {
   return (
     <>
@@ -19,10 +20,12 @@ const MarriageSearch = () => {
           </a>
           <div className="p-5 relative">
             <input type="search " placeholder="Search for groom" className="p-1 w-[100%] outline-gray-200 rounded"/>
+            <Link href="/groomlist">
             <span className="flex absolute top-7 right-7 cursor-pointer">
             <FiSearch/>
               
             </span>
+            </Link>
           </div>
         </div>
          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
@@ -37,10 +40,12 @@ const MarriageSearch = () => {
           </a>
           <div className="p-5 relative">
             <input type="search " placeholder="Search for bride" className="p-1 w-[100%] outline-gray-200 rounded"/>
+            <Link href="/bridelist">
             <span className="flex absolute top-7 right-7 cursor-pointer" >
             <FiSearch/>
               
             </span>
+            </Link>
           </div>
         </div>
       </div>

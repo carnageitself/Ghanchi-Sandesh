@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Cookies from 'js-cookie'; // Import the js-cookie library
 import API_URL from '../url';
+import { useAuth } from './useAuth';
 
 interface SignupState {
   loading: boolean;
@@ -15,12 +16,16 @@ interface SignupState {
 export function useSignup(): SignupState {
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<Error | null>(null);
+  const { authenticated } = useAuth();
 
   const signup = async (fullName: string, email: string, password: string) => {
     setLoading(true);
     setError(null);
 
     try {
+      if (authenticated) {
+        window.location.href = "/"; // Redirect to the home page
+      } else {
       // Make an API request to perform user registration (signup)
       const response = await fetch(`http://localhost:3001/api/v1/register`, {
         method: 'POST',
@@ -44,6 +49,7 @@ export function useSignup(): SignupState {
         // Handle signup failure here, e.g., set error state
         setError(new Error('Signup failed'));
       }
+    }
     } catch (err: any) {
       // Handle any network or other errors that occur during signup
       setError(err);

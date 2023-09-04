@@ -4,7 +4,7 @@ import Upload from './inputs/Upload'
 
 const AchievementsForm = () => {
   return (
-    <div className="form flex flex-col gap-[30px] items-center md:items-start px-[25px] md:flex-row  justify-between">
+    <div className="form flex flex-col gap-[30px] items-center md:items-start px-[25px] md:flex-row  justify-between mb-5">
       <div className="inputs flex flex-col gap-[15px] w-full md:w-[70%]">
         <span>Achievements Details</span>
 

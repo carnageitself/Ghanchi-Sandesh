@@ -1,7 +1,12 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import ServicesFeed from "../components/ServiceFeed";
+import ServicesForm from "../components/ServicesForm";
 
 const Services = () => {
+
+const [open, setOpen] = useState(false);
+
   return (
     <>
 
@@ -23,12 +28,18 @@ const Services = () => {
 
         </ul>
       </div>
-      <div className="flex flex-wrap p-2 w-full lg:-mx-4 services__overflow">
+      <div className="flex flex-wrap p-2 w-full lg:-mx-4 services__overflow justify-center">
 
         <ServicesFeed />
         <ServicesFeed />
         <ServicesFeed />
       </div>
+      <div className="flex justify-center items-center mb-5 mt-4">
+       {!open && <button className="bg-[#B80433] p-3 text-center text-white rounded-md" onClick={()=>setOpen(!open)}>
+          Upload
+        </button>}
+      </div>
+      {open && <ServicesForm/>}
     </>
 
   );
