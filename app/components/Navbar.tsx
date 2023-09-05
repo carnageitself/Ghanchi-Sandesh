@@ -9,8 +9,6 @@ import Dropdown from "./Dropdown";
 
 const Navbar = () => {
   // const [open, setOpen] = useState(false);
-
-  const [open, setOpen] = useState(false);
   const [navbar, setNavbar] = useState(false);
 
   const handleClick = () => {
@@ -100,18 +98,18 @@ const Navbar = () => {
               </ul>
 
               <div className="mt-3 space-y-2 lg:hidden md:inline-block">
-                    <a
-                        href="/"
+                    <Link
+                        href="/login"
                         className="inline-block w-full px-4 py-2 text-center text-white bg-[#b90434] rounded-md shadow hover:bg-[#a3485f]"
                     >
                         Sign in
-                    </a>
-                    <a
-                        href="/"
+                    </Link>
+                    <Link
+                        href="/signup"
                         className="inline-block w-full px-4 py-2 text-center text-white bg-[#b90434] rounded-md shadow hover:bg-[#a3485f]"
                     >
                         Sign up
-                    </a>
+                    </Link>
                 </div>
 
 
@@ -121,27 +119,25 @@ const Navbar = () => {
             </div>
           </div>
           <div className="hidden space-x-2 md:inline-block">
-                    <a
-                        href="/"
+                    <Link
+                        href="/login"
                         className="px-4 py-2 text-white bg-[#b90434] rounded-md shadow hover:bg-[#a3485f]"
                     >
                         Sign in
-                    </a>
-                    <a
-                        href="/"
+                    </Link>
+                    <Link
+                        href="/signup"
                         className="px-4 py-2 text-white bg-[#b90434] rounded-md shadow hover:bg-[#a3485f]"
                     >
                         Sign up
-                    </a>
+                    </Link>
                 </div>
           <span className="menu hidden space-x-2 md:inline-block">
             <Hamburger
               size={22}
               color="white"
-              toggle={setOpen}
-              toggled={open}
+             
             />
-             {open && <div className="top-20" onClick={()=>open}><Dropdown/></div>}
           </span>
         </div>
       </nav>
