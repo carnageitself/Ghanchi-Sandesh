@@ -102,13 +102,13 @@ const Navbar = () => {
               <div className="mt-3 space-y-2 lg:hidden md:inline-block">
                     <a
                         href="/"
-                        className="inline-block w-full px-4 py-2 text-center text-white bg-gray-600 rounded-md shadow hover:bg-gray-800"
+                        className="inline-block w-full px-4 py-2 text-center text-white bg-[#b90434] rounded-md shadow hover:bg-[#a3485f]"
                     >
                         Sign in
                     </a>
                     <a
                         href="/"
-                        className="inline-block w-full px-4 py-2 text-center text-gray-800 bg-white rounded-md shadow hover:bg-gray-100"
+                        className="inline-block w-full px-4 py-2 text-center text-white bg-[#b90434] rounded-md shadow hover:bg-[#a3485f]"
                     >
                         Sign up
                     </a>
@@ -123,13 +123,13 @@ const Navbar = () => {
           <div className="hidden space-x-2 md:inline-block">
                     <a
                         href="/"
-                        className="px-4 py-2 text-white bg-gray-600 rounded-md shadow hover:bg-gray-800"
+                        className="px-4 py-2 text-white bg-[#b90434] rounded-md shadow hover:bg-[#a3485f]"
                     >
                         Sign in
                     </a>
                     <a
                         href="/"
-                        className="px-4 py-2 text-gray-800 bg-white rounded-md shadow hover:bg-gray-100"
+                        className="px-4 py-2 text-white bg-[#b90434] rounded-md shadow hover:bg-[#a3485f]"
                     >
                         Sign up
                     </a>
