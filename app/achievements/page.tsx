@@ -105,7 +105,7 @@ const Achievements: React.FC = () => {
               <span className="text-[hsl(344,96%,37%)] ">Name :</span> {Name}{" "}
             </span>
             <span className="mb-2  font-bold tracking-tight text-xl">
-              <span className="text-[hsl(344,96%,37%)] ">Father`&apos`s Name :</span>{" "}
+              <span className="text-[hsl(344,96%,37%)] ">Father &apos; s Name :</span>{" "}
               {Fathers_name}{" "}
             </span>
             <span className="mb-2  font-bold tracking-tight text-xl">

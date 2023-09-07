@@ -5,8 +5,8 @@ import Img from "/public/engineer.jpeg";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { BsShare } from "react-icons/bs";
 import { data } from "../data/NewsData";
-import { PiDotsThreeOutlineVertical } from "react-icons/pi";
-import Link from 'next/link';
+import { AiFillEdit } from "react-icons/ai";
+import Link from "next/link";
 import Summary from "../summary/page";
 
 interface NewsData {
@@ -26,7 +26,7 @@ const NewsFeed: React.FC = () => {
   return (
     <>
       <div className="pt-6 pb-12">
-        <Link  href='/summary'>
+        <div>
           <div className="container w-100 lg:w-4/5 mx-auto flex flex-col">
             <div
               v-for="card in cards"
@@ -34,10 +34,12 @@ const NewsFeed: React.FC = () => {
                                         bg-white rounded-lg shadow  mt-4 w-100 mx-2"
             >
               <div className="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
-                <h1 className="font-semibold text-lg leading-tight truncate lg:text-5xl md:text-5xl">
-                  {title}
-                </h1>
-                <p className="mt-2 text-lg">{description}</p>
+                <Link href="/summary">
+                  <h1 className="font-semibold text-lg leading-tight truncate lg:text-5xl md:text-5xl">
+                    {title}
+                  </h1>
+                  <p className="mt-2 text-lg">{description}</p>
+                </Link>
                 <div className="text-sm text-gray-700 uppercase flex items-center justify-between tracking-wide font-semibold mt-2">
                   <span className="flex text-[#EC5D82] text-md">
                     {" "}
@@ -56,44 +58,38 @@ const NewsFeed: React.FC = () => {
                   alt="News_feed_img"
                 />
               </div>
-              <div className="cursor-pointer  mt-3">
-                <PiDotsThreeOutlineVertical size={25} />
-                {open1 && (
-                  <div className="options absolute top-[765px] right-6 ml-10 my-5 bg-white border flex flex-col w-[200px] font-normal rounded-xl">
-                    <span className="link hover:bg-gray-100 p-3 hover:rounded-tl-xl text-base font-medium">
-                      edit
+              <div className="cursor-pointer relative mt-3  h-6 w-auto right-[35px] bg-white rounded-lg">
+                <div className="dropdown">
+                  <button className="bg-white text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center">
+                    <span className="mr-1">
+                      <AiFillEdit />
                     </span>
-                    <span className="link hover:bg-gray-100 p-3 hover:rounded-bl-xl text-base font-medium">
-                      delete
-                    </span>
-                  </div>
-                )}
-                {open2 && (
-                  <div className="options absolute top-[1165px] right-6 ml-10 my-5 bg-white border flex flex-col w-[200px] font-normal rounded-xl">
-                    <span className="link hover:bg-gray-100 p-3 hover:rounded-tl-xl text-base font-medium">
-                      edit
-                    </span>
-                    <span className="link hover:bg-gray-100 p-3 hover:rounded-bl-xl text-base font-medium">
-                      delete
-                    </span>
-                  </div>
-                )}
-                {open3 && (
-                  <div className="options absolute top-[1565px] right-6 ml-10 my-5 bg-white border flex flex-col w-[200px] font-normal rounded-xl">
-                    <span className="link hover:bg-gray-100 p-3 hover:rounded-tl-xl text-base font-medium">
-                      edit
-                    </span>
-                    <span className="link hover:bg-gray-100 p-3 hover:rounded-bl-xl text-base font-medium">
-                      delete
-                    </span>
-                  </div>
-                )}
+                  </button>
+                  <ul className="dropdown-menu absolute hidden text-gray-700 ">
+                    <li className="">
+                      <a
+                        className="bg-white hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        Edit
+                      </a>
+                    </li>
+                    <li className="">
+                      <a
+                        className="bg-white hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        Delete
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
 
           {/* <!--/ card--> */}
-        </Link>
+        </div>
         {/* <!--/ flex--> */}
       </div>
       {/* </div> */}
