@@ -132,13 +132,7 @@ const Navbar = () => {
                         Sign up
                     </Link>
                 </div>
-          <span className="menu hidden space-x-2 md:inline-block">
-            <Hamburger
-              size={22}
-              color="white"
-             
-            />
-          </span>
+  
         </div>
       </nav>
     </>
