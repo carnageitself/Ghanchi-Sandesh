@@ -3,12 +3,25 @@ import Img from "@/public/engineer.jpeg";
 import Image from "next/image";
 import { BsShare } from "react-icons/bs";
 import { MdOutlineLocationOn } from "react-icons/md";
+import { data } from "../data/NewsData";
 
-const summary = () => {
+interface summaryProps {
+  title: String,
+  description: String,
+  img: String,
+  location: String,
+}
+
+const Summary: React.FC = () => {
+
+const  {title, description, img, location} = data as summaryProps;
+
   return (
     <>
       <div className="bg-[#C01D47] h-[50vh] flex justify-center items-center w-full">
-        <h1 className="text-5xl text-white text-center relative -top-7  ">Heading of news</h1>{" "}
+        <h1 className="text-5xl text-white text-center relative -top-7  ">
+          {data.title}
+        </h1>{" "}
       </div>
       <div className="bg-[#EEEEEF] ">
         <div className="w-9/12 mx-auto p-4">
@@ -23,25 +36,21 @@ const summary = () => {
 
           {/* <!-- Icons --> */}
           <div className="flex justify-between mt-4 relative -top-28">
-            <div className="flex items-center">
-              <span className="text-[#EC5D82]">Location</span>
+            <div className="flex items-center text-[#EC5D82]">
               <MdOutlineLocationOn size="20" />
+              <span className="">{data.location}</span>
             </div>
-            <div className="flex items-center">
-              <span className="text-[#EC5D82] pr-2">Share</span>
+            <div className="flex items-center text-[#EC5D82]">
+              <span className=" pr-2">Share</span>
               <BsShare size="20" />
             </div>
           </div>
 
           {/* <!-- Content Div --> */}
           <div className="mt-4 relative -top-28">
-            {/* <!-- Place your content here --> */}
+            {/* <!-- Place your content here --> */}{" "}
             <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
-            <p>
-              Rem porro ratione ut et officiis nobis ipsum tenetur eum! Dolores
-              labore ut quibusdam possimus quod eius mollitia nam consectetur
-              dolorem suscipit.
-            </p>
+            <p>{data.description}</p>
           </div>
 
           {/* <!-- Two Images with Responsive Layout --> */}
@@ -59,4 +68,4 @@ const summary = () => {
   );
 };
 
-export default summary;
+export default Summary;

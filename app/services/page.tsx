@@ -1,11 +1,9 @@
 "use client"
 import React, { useState } from "react";
 import ServicesFeed from "../components/ServiceFeed";
-import ServicesForm from "../components/ServicesForm";
+import Link from "next/link";
 
 const Services = () => {
-
-const [open, setOpen] = useState(false);
 
   return (
     <>
@@ -14,16 +12,16 @@ const [open, setOpen] = useState(false);
       <div className="container my-12 mx-auto px-4">
         <ul className="flex flex-wrap text-sm font-medium text-center text-gray-500 dark:text-gray-400">
           <li className="mr-2">
-            <a href="#" className="inline-block px-4 py-3 text-white bg-[hsl(344,96%,37%)] rounded-full active" aria-current="page">Samaj  bhavan</a>
+            <a href="#" className="inline-block px-4 py-3 text-white bg-[hsl(344,96%,37%)] rounded-full active" aria-current="page">समाज भवन</a>
           </li>
           <li className="mr-2">
-            <a href="#" className="inline-block px-4 py-3 rounded-full hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-[hsl(344,96%,37%)] dark:hover:text-white">Society Hostel</a>
+            <a href="#" className="inline-block px-4 py-3 rounded-full hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-[hsl(344,96%,37%)] dark:hover:text-white">समाज छात्रावास</a>
           </li>
           <li className="mr-2">
-            <a href="#" className="inline-block px-4 py-3 rounded-full hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-[hsl(344,96%,37%)] dark:hover:text-white">Ambulance</a>
+            <a href="#" className="inline-block px-4 py-3 rounded-full hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-[hsl(344,96%,37%)] dark:hover:text-white">एम्बुलेंस सेवा</a>
           </li>
           <li className="mr-2">
-            <a href="#" className="inline-block px-4 py-3 rounded-full hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-[hsl(344,96%,37%)] dark:hover:text-white">Society Temple</a>
+            <a href="#" className="inline-block px-4 py-3 rounded-full hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-[hsl(344,96%,37%)] dark:hover:text-white">समाज के मंदिर</a>
           </li>
 
         </ul>
@@ -35,11 +33,13 @@ const [open, setOpen] = useState(false);
         <ServicesFeed />
       </div>
       <div className="flex justify-center items-center mb-5 mt-4">
-       {!open && <button className="bg-[#B80433] p-3 text-center text-white rounded-md" onClick={()=>setOpen(!open)}>
+        <Link href="/servicelist">
+       <button className="bg-[#B80433] p-3 text-center text-white rounded-md">
           Upload
-        </button>}
+        </button>
+        </Link>
       </div>
-      {open && <ServicesForm/>}
+    
     </>
 
   );

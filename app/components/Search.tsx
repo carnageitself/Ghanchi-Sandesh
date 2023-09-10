@@ -19,12 +19,12 @@ const Search = () => {
       </Link>
       <input
         type="text"
-        placeholder="Search Name And Location"
+        placeholder="नाम या स्थान खोजें"
         className="px-[15px] outline-none w-full"
       />
       <div className="location text-red-500 text-[20px] flex items-center gap-[10px] pr-[25px]">
         <MdLocationPin size={25} />
-        <span>India</span>
+        <span>भारत</span>
       </div>
     </div>
   );

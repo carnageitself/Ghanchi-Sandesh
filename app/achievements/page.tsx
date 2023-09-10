@@ -1,9 +1,9 @@
 "use client"
 import Image from "next/image";
-import React, {useState} from "react";
+import React from "react";
 import { data } from "../data/Achivment";
 import Img from "/public/engineer.jpeg";
-import AchievementsForm from "../components/AchievementsForm";
+import Link from "next/link";
 
 interface achievementsProps {
   Name: string;
@@ -16,8 +16,6 @@ interface achievementsProps {
 }
 
 const Achievements: React.FC = () => {
-
-  const [open, setOpen] = useState(false);
 
   const {
     Name,
@@ -128,11 +126,12 @@ const Achievements: React.FC = () => {
         </div>
       </div>
       <div className="flex justify-center items-center mb-5">
-       { !open && <button className="bg-[#B80433] p-4 text-center text-white rounded-md" onClick={()=> setOpen(!open)}>
+        <Link href="/achievementlist">
+     <button className="bg-[#B80433] p-4 text-center text-white rounded-md">
           Upload
-        </button>}
+        </button>
+        </Link>
       </div>
-      {open && <AchievementsForm/>}
     </>
   );
 };

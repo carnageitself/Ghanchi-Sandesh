@@ -35,10 +35,12 @@ const NewsFeed: React.FC = () => {
             >
               <div className="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
                 <Link href="/summary">
-                  <h1 className="font-semibold text-lg leading-tight truncate lg:text-5xl md:text-5xl">
+                  <h1 className="font-semibold text-lg leading-tight truncate lg:text-5xl md:text-5xl text-[#B80433] max-w-[770px]">
                     {title}
                   </h1>
-                  <p className="mt-2 text-lg">{description}</p>
+                  <p className="mt-2 text-lg text-[#434343] max-w-[770px]">
+                    {description}
+                  </p>
                 </Link>
                 <div className="text-sm text-gray-700 uppercase flex items-center justify-between tracking-wide font-semibold mt-2">
                   <span className="flex text-[#EC5D82] text-md">
@@ -47,7 +49,7 @@ const NewsFeed: React.FC = () => {
                   </span>
                   <span className="flex text-[#EC5D82]">
                     <BsShare size={20} />{" "}
-                    <span className="text-md ml-1">Share </span>
+                    <span className="text-md ml-1">शेयर</span>
                   </span>
                 </div>
               </div>

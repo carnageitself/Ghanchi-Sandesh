@@ -19,7 +19,7 @@ const MarriageSearch = () => {
             />
           </a>
           <div className="p-5 relative">
-            <input type="search " placeholder="Search for groom" className="p-1 w-[100%] outline-gray-200 rounded"/>
+            <input type="search " placeholder="दूल्हे की तलाश करो" className="p-1 w-[100%] outline-gray-200 rounded"/>
             <Link href="/groomlist">
             <span className="flex absolute top-7 right-7 cursor-pointer">
             <FiSearch/>
@@ -39,7 +39,7 @@ const MarriageSearch = () => {
             />
           </a>
           <div className="p-5 relative">
-            <input type="search " placeholder="Search for bride" className="p-1 w-[100%] outline-gray-200 rounded"/>
+            <input type="search " placeholder="दुल्हन की तलाश करें" className="p-1 w-[100%] outline-gray-200 rounded"/>
             <Link href="/bridelist">
             <span className="flex absolute top-7 right-7 cursor-pointer" >
             <FiSearch/>

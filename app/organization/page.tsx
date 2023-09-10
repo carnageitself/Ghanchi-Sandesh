@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from "react";
 import OrganisationFeed from "../components/OrganisationFeed";
-import OrganisationForm from "../components/OrganisationForm";
+import Link from "next/link";
 
 const Organization = () => {
 
@@ -17,11 +17,12 @@ const Organization = () => {
      <OrganisationFeed/>
      </div>
      <div className="flex justify-center items-center mb-5 mt-4">
-       {!open && <button className="bg-[#B80433] p-3 text-center text-white rounded-md" onClick={()=>setOpen(!open)}>
+      <Link href="/organisationlist">
+        <button className="bg-[#B80433] p-3 text-center text-white rounded-md">
           Upload
-        </button>}
+        </button>
+        </Link>
       </div>
-      {open && <OrganisationForm/>}
     </div>
   );
 };

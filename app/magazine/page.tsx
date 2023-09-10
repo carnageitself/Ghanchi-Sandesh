@@ -1,12 +1,10 @@
 "use client"
-import React, {useState} from "react";
+import React from "react";
 import MagazineData from "../components/MagazineData";
 import {IoIosCall} from "react-icons/io"
-import MagazineForm from "../components/MagazineForm";
+import Link from "next/link";
 
 const Magazine = () => {
-
-  const [open, setOpen] = useState(false);
 
   return (
     <div className="magazine w-full ">
@@ -23,11 +21,13 @@ const Magazine = () => {
       <MagazineData />
       </div>
       <div className="flex justify-center items-center mb-5 mt-4">
-       {!open && <button className="bg-[#B80433] p-3 text-center text-white rounded-md" onClick={()=> setOpen(!open)}>
+        <Link href="/magazinelist">
+       <button className="bg-[#B80433] p-3 text-center text-white rounded-md">
           Upload
-        </button>}
+        </button>
+        </Link>
       </div>
-      {open && <MagazineForm/>}
+     
       </div>
       <div className="contact  flex flex-col items-center mb-4 w-full">
       <div className="container flex flex-col h-72 bg-gray-200 items-center justify-center gap-3">

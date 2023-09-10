@@ -102,13 +102,13 @@ const Navbar = () => {
                         href="/login"
                         className="inline-block w-full px-4 py-2 text-center text-white bg-[#b90434] rounded-md shadow hover:bg-[#a3485f]"
                     >
-                        Sign in
+                        लॉग इन
                     </Link>
                     <Link
                         href="/signup"
                         className="inline-block w-full px-4 py-2 text-center text-white bg-[#b90434] rounded-md shadow hover:bg-[#a3485f]"
                     >
-                        Sign up
+                        साइन अप
                     </Link>
                 </div>
 
@@ -123,13 +123,13 @@ const Navbar = () => {
                         href="/login"
                         className="px-4 py-2 text-white bg-[#b90434] rounded-md shadow hover:bg-[#a3485f]"
                     >
-                        Sign in
+                        लॉग इन
                     </Link>
                     <Link
                         href="/signup"
                         className="px-4 py-2 text-white bg-[#b90434] rounded-md shadow hover:bg-[#a3485f]"
                     >
-                        Sign up
+                        साइन अप
                     </Link>
                 </div>
   
