@@ -35,10 +35,10 @@ const NewsFeed: React.FC = () => {
             >
               <div className="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
                 <Link href="/summary">
-                  <h1 className="font-semibold text-lg leading-tight truncate lg:text-5xl md:text-5xl text-[#B80433] max-w-[770px]">
+                  <h1 className="font-semibold text-lg leading-tight truncate lg:text-5xl md:text-5xl text-[#B80433] max-w-[770px] pt-4">
                     {title}
                   </h1>
-                  <p className="mt-2 text-lg text-[#434343] max-w-[770px]">
+                  <p className="mt-2 text-lg text-[#434343] max-w-[770px] line-clamp-4">
                     {description}
                   </p>
                 </Link>

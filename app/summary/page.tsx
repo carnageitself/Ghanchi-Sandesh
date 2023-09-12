@@ -49,7 +49,6 @@ const  {title, description, img, location} = data as summaryProps;
           {/* <!-- Content Div --> */}
           <div className="mt-4 relative -top-28">
             {/* <!-- Place your content here --> */}{" "}
-            <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
             <p>{data.description}</p>
           </div>
 
