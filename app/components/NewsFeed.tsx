@@ -53,13 +53,14 @@ const NewsFeed: React.FC = () => {
                   </span>
                 </div>
               </div>
-              <div className="h-auto w-auto md:w-1/2">
+              <div className="h-auto  md:w-1/2">
                 <Image
                   className="inset-0 h-full w-full object-cover object-center"
                   src={Img}
                   alt="News_feed_img"
                 />
               </div>
+              {/*   drop-drop Starts*/}
               <div className="cursor-pointer relative mt-3  h-6 w-auto right-[35px] bg-white rounded-lg">
                 <div className="dropdown">
                   <button className="bg-white text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center">
@@ -67,7 +68,7 @@ const NewsFeed: React.FC = () => {
                       <AiFillEdit />
                     </span>
                   </button>
-                  <ul className="dropdown-menu absolute hidden text-gray-700 ">
+                  <ul className="dropdown-menu absolute right-1 hidden text-gray-700 ">
                     <li className="">
                       <a
                         className="bg-white hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
@@ -87,6 +88,7 @@ const NewsFeed: React.FC = () => {
                   </ul>
                 </div>
               </div>
+              {/*   drop-drop end*/}
             </div>
           </div>
 
